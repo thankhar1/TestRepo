@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "923389d4-3df0-4c9c-9b0f-4d98fc003109",
 		"name": "CyberArk",
-		"description": "version=1.0 - This is a Cyberark API with examples",
+		"description": "version=2.0 - This is a Cyberark API with examples",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -41,7 +41,7 @@
 			},
 			"response": [
 				{
-					"id": "28c33279-609d-4e12-bebf-5e801964e227",
+					"id": "14007ab9-006e-4152-b0d7-10bc61aa1e59",
 					"name": "CyberArk Logon - Invalid User",
 					"originalRequest": {
 						"method": "POST",
@@ -237,7 +237,7 @@
 					"body": "{\n    \"CyberArkLogonResult\": \"Invalid User\"\n}"
 				},
 				{
-					"id": "a83a2100-d764-4339-a706-3aefaded9aad",
+					"id": "f4ccb47f-8072-4ef9-8390-4aee85ad451b",
 					"name": "CyberArk Logon",
 					"originalRequest": {
 						"method": "POST",
@@ -435,6 +435,434 @@
 			]
 		},
 		{
+			"name": "CyberArk Logon Copy",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\" : \"tk_user\",\n\t\"password\" : \"Sailcyber1\"\n}"
+				},
+				"url": {
+					"raw": "https://172.16.12.14/PasswordVault/WebServices/auth/Cyberark/CyberArkAuthenticationService.svc/Logon",
+					"protocol": "https",
+					"host": [
+						"172",
+						"16",
+						"12",
+						"14"
+					],
+					"path": [
+						"PasswordVault",
+						"WebServices",
+						"auth",
+						"Cyberark",
+						"CyberArkAuthenticationService.svc",
+						"Logon"
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "64e2d9e2-6d59-4603-8cbe-6247a29f6077",
+					"name": "CyberArk Logon",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\" : \"tk_user\",\n\t\"password\" : \"Sailcyber1\"\n}"
+						},
+						"url": {
+							"raw": "https://172.16.12.14/PasswordVault/WebServices/auth/Cyberark/CyberArkAuthenticationService.svc/Logon",
+							"protocol": "https",
+							"host": [
+								"172",
+								"16",
+								"12",
+								"14"
+							],
+							"path": [
+								"PasswordVault",
+								"WebServices",
+								"auth",
+								"Cyberark",
+								"CyberArkAuthenticationService.svc",
+								"Logon"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "Warning",
+							"name": "Access-Control-Expose-Headers",
+							"description": "Lets a server whitelist headers that browsers are allowed to access."
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, must-revalidate",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Content-Length",
+							"value": "503",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 10 Jul 2018 15:20:35 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Expires",
+							"value": "-1",
+							"name": "Expires",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/8.5",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "CA22222=; path=/PasswordVault/; secure; HttpOnly",
+							"name": "Set-Cookie",
+							"description": "an HTTP cookie"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "CA11111=; path=/PasswordVault/; secure; HttpOnly",
+							"name": "Set-Cookie",
+							"description": "an HTTP cookie"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "CA55555=; path=/PasswordVault/; secure",
+							"name": "Set-Cookie",
+							"description": "an HTTP cookie"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "CA33333=; path=/PasswordVault/; secure; HttpOnly",
+							"name": "Set-Cookie",
+							"description": "an HTTP cookie"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "mobileState=Desktop; path=/PasswordVault/; secure; HttpOnly",
+							"name": "Set-Cookie",
+							"description": "an HTTP cookie"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000",
+							"name": "Strict-Transport-Security",
+							"description": "A HSTS Policy informing the HTTP client how long to cache the HTTPS only policy and whether this applies to subdomains."
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"name": "X-Content-Type-Options",
+							"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+						},
+						{
+							"key": "X-FRAME-Options",
+							"value": "SAMEORIGIN",
+							"name": "X-FRAME-Options",
+							"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+						},
+						{
+							"key": "X-UA-Compatible",
+							"value": "IE=EmulateIE8",
+							"name": "X-UA-Compatible",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block",
+							"name": "X-XSS-Protection",
+							"description": "Cross-site scripting (XSS) filter"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Mon Jan 18 2038 19:14:07 GMT-0800 (PST)",
+							"httpOnly": true,
+							"domain": "172.16.12.14",
+							"path": "/PasswordVault/",
+							"secure": true,
+							"value": "",
+							"key": "CA22222"
+						},
+						{
+							"expires": "Mon Jan 18 2038 19:14:07 GMT-0800 (PST)",
+							"httpOnly": true,
+							"domain": "172.16.12.14",
+							"path": "/PasswordVault/",
+							"secure": true,
+							"value": "",
+							"key": "CA11111"
+						},
+						{
+							"expires": "Mon Jan 18 2038 19:14:07 GMT-0800 (PST)",
+							"httpOnly": false,
+							"domain": "172.16.12.14",
+							"path": "/PasswordVault/",
+							"secure": true,
+							"value": "",
+							"key": "CA55555"
+						},
+						{
+							"expires": "Mon Jan 18 2038 19:14:07 GMT-0800 (PST)",
+							"httpOnly": true,
+							"domain": "172.16.12.14",
+							"path": "/PasswordVault/",
+							"secure": true,
+							"value": "",
+							"key": "CA33333"
+						},
+						{
+							"expires": "Mon Jan 18 2038 19:14:07 GMT-0800 (PST)",
+							"httpOnly": true,
+							"domain": "172.16.12.14",
+							"path": "/PasswordVault/",
+							"secure": true,
+							"value": "Desktop",
+							"key": "mobileState"
+						}
+					],
+					"body": "{\n    \"CyberArkLogonResult\": \"AAEAAAD/////AQAAAAAAAAAMAgAAAFhDeWJlckFyay5TZXJ2aWNlcy5XZWIsIFZlcnNpb249OC4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj00MGJlMWRiYzg3MTg2NzBmBQEAAAAoQ3liZXJBcmsuU2VydmljZXMuV2ViLlNlc3Npb25JZGVudGlmaWVycwQAAAAFVG9rZW4ESW5mbwlTZXNzaW9uSWQEVHlwZQEBAQECAAAABgMAAAAQMjM1NUNFRTg4OTA0MkZBRAYEAAAAUDAwMDAwMDAyNDkyMEY4M0VCRTI0MEVCNTdFNEI4RDJFQTI0MThENUYyNjZDNkVENzcwNDRFNDUzQ0Q3REM2RTM0QTQ1QkIzQTAwMDAwMDAwBgUAAAAkYTQ5YjM4YTItNzY0My00Y2NkLTlmYmYtYjU2NjcxYjdmMTk0BgYAAAAACw==\"\n}"
+				},
+				{
+					"id": "462cfa70-ba75-4e1d-8be9-6b7abb693160",
+					"name": "CyberArk Logon - Invalid User",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\" : \"invalidUser\",\n\t\"password\" : \"Sailcyber1\"\n}"
+						},
+						"url": {
+							"raw": "https://172.16.12.14/PasswordVault/WebServices/auth/Cyberark/CyberArkAuthenticationService.svc/Logon",
+							"protocol": "https",
+							"host": [
+								"172",
+								"16",
+								"12",
+								"14"
+							],
+							"path": [
+								"PasswordVault",
+								"WebServices",
+								"auth",
+								"Cyberark",
+								"CyberArkAuthenticationService.svc",
+								"Logon"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Access-Control-Expose-Headers",
+							"value": "Warning",
+							"name": "Access-Control-Expose-Headers",
+							"description": "Lets a server whitelist headers that browsers are allowed to access."
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, must-revalidate",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Content-Length",
+							"value": "503",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 10 Jul 2018 15:20:35 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Expires",
+							"value": "-1",
+							"name": "Expires",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache",
+							"name": "Pragma",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"key": "Server",
+							"value": "Microsoft-IIS/8.5",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "CA22222=; path=/PasswordVault/; secure; HttpOnly",
+							"name": "Set-Cookie",
+							"description": "an HTTP cookie"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "CA11111=; path=/PasswordVault/; secure; HttpOnly",
+							"name": "Set-Cookie",
+							"description": "an HTTP cookie"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "CA55555=; path=/PasswordVault/; secure",
+							"name": "Set-Cookie",
+							"description": "an HTTP cookie"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "CA33333=; path=/PasswordVault/; secure; HttpOnly",
+							"name": "Set-Cookie",
+							"description": "an HTTP cookie"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "mobileState=Desktop; path=/PasswordVault/; secure; HttpOnly",
+							"name": "Set-Cookie",
+							"description": "an HTTP cookie"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000",
+							"name": "Strict-Transport-Security",
+							"description": "A HSTS Policy informing the HTTP client how long to cache the HTTPS only policy and whether this applies to subdomains."
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff",
+							"name": "X-Content-Type-Options",
+							"description": "The only defined value, \"nosniff\", prevents Internet Explorer from MIME-sniffing a response away from the declared content-type"
+						},
+						{
+							"key": "X-FRAME-Options",
+							"value": "SAMEORIGIN",
+							"name": "X-FRAME-Options",
+							"description": "Clickjacking protection: \"deny\" - no rendering within a frame, \"sameorigin\" - no rendering if origin mismatch"
+						},
+						{
+							"key": "X-UA-Compatible",
+							"value": "IE=EmulateIE8",
+							"name": "X-UA-Compatible",
+							"description": "Custom header"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block",
+							"name": "X-XSS-Protection",
+							"description": "Cross-site scripting (XSS) filter"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Mon Jan 18 2038 19:14:07 GMT-0800 (PST)",
+							"httpOnly": true,
+							"domain": "172.16.12.14",
+							"path": "/PasswordVault/",
+							"secure": true,
+							"value": "",
+							"key": "CA22222"
+						},
+						{
+							"expires": "Mon Jan 18 2038 19:14:07 GMT-0800 (PST)",
+							"httpOnly": true,
+							"domain": "172.16.12.14",
+							"path": "/PasswordVault/",
+							"secure": true,
+							"value": "",
+							"key": "CA11111"
+						},
+						{
+							"expires": "Mon Jan 18 2038 19:14:07 GMT-0800 (PST)",
+							"httpOnly": false,
+							"domain": "172.16.12.14",
+							"path": "/PasswordVault/",
+							"secure": true,
+							"value": "",
+							"key": "CA55555"
+						},
+						{
+							"expires": "Mon Jan 18 2038 19:14:07 GMT-0800 (PST)",
+							"httpOnly": true,
+							"domain": "172.16.12.14",
+							"path": "/PasswordVault/",
+							"secure": true,
+							"value": "",
+							"key": "CA33333"
+						},
+						{
+							"expires": "Mon Jan 18 2038 19:14:07 GMT-0800 (PST)",
+							"httpOnly": true,
+							"domain": "172.16.12.14",
+							"path": "/PasswordVault/",
+							"secure": true,
+							"value": "Desktop",
+							"key": "mobileState"
+						}
+					],
+					"body": "{\n    \"CyberArkLogonResult\": \"Invalid User\"\n}"
+				}
+			]
+		},
+		{
 			"name": "Rotate Password",
 			"request": {
 				"method": "PUT",
@@ -511,7 +939,7 @@
 			},
 			"response": [
 				{
-					"id": "92b1242b-5465-4be8-b5ab-99628c146849",
+					"id": "fb55dd4e-29d3-4475-94f3-5d2bff08e8e9",
 					"name": "Add Account to Safe",
 					"originalRequest": {
 						"method": "POST",
